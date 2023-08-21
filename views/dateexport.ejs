@@ -1,0 +1,16 @@
+<!-- how 1 should export this function to js file -->
+<!-- we can do this with the help of nodejs -->
+module.exports= giveDate;
+
+function giveDate(){
+    var options={
+        week:'long',
+        year:'numeric',
+        month:'long',
+        day:'numeric'
+    }
+    // saare changes yaha se ho rhe h
+    const today=new Date();
+  var day=today.toLocaleDateString("en-US",options);
+  return day;
+}
